@@ -1,0 +1,404 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+  background-image: url('images/background.jpg');
+}
+.box{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.box .overlap-group {
+    height: 90px;
+    width: 1600px;
+    background-color: #1d1d1d;
+}
+
+
+.box h1{
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: bolder;
+    color: #dddcc4;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 14.8px;
+    line-height: normal;
+    padding-top: 12px;
+   
+}
+
+.box .sub {  
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dddcc3;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 8.6px;
+    line-height: normal;
+    white-space: nowrap;
+    padding-top: 3px;
+}
+
+
+.image img{
+    
+    padding-left: 270px;
+   
+    height: 600px;
+    width: 100%;
+    mix-blend-mode: exclusion;
+    background-blend-mode: exclusion;
+    object-fit: contain;
+}
+.label {
+    width: 587px;
+    height: 220px;
+}
+
+.label .stay-hungry-stay {
+    position: absolute;
+    width: 470px;
+    top: 50%;
+    left: 10%;
+    font-family: 'Prosto One', cursive;
+    font-weight: 400;
+    color: #c4c399;
+    font-size: 44px;
+    text-align: justify;
+    letter-spacing: 11.2px;
+    line-height: normal;
+}
+
+
+.box1 .overlap-group1 {
+    position: absolute;
+    width: 1400px;
+    height: 480px;
+    background-color: #252524;
+    border-radius: 170px;
+    left: -10%;
+}
+
+.box1 .text-wrapper1 {
+    position: absolute;
+    width: 650px;
+    top: 49px;
+    left: 100px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #bcbc9b;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.box1 .steven-paul-jobs {
+    position: absolute;
+    width: 1150px;
+    height: 450px;
+    top: 120px;
+    left: 210px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #bcbc9b;
+    font-size: 24px;
+    
+    text-align: justify;
+    letter-spacing: 1.2px;
+    line-height: normal;
+}
+.box1 img{
+  
+  background-size: contain;
+}
+
+/* Timeline */
+
+
+
+.box5{
+position: absolute;
+  position: sticky;
+  top: 0;
+
+  width: 2100px;
+  color: #dddcc4;
+  background-color: #1d1d1d;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.9);
+  height: 80px;
+  z-index: 3;
+  margin-top: -770px;
+ 
+}
+.box5 h2{
+  position: absolute;
+  left: 650px;
+  font-size: 40px;
+  padding: 10px;
+}
+.box6{
+  position: absolute;
+    position: sticky;
+    top: 0;
+  
+    width: 2100px;
+    color: #dddcc4;
+    background-color: #1d1d1d;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.9);
+    height: 80px;
+    z-index: 3;
+    margin-top: 3200px;
+   
+  }
+  .box6 h2{
+    position: absolute;
+    left: 650px;
+    font-size: 40px;
+    padding: 10px;
+  }
+
+.box3{
+  position: absolute;
+  position: sticky;
+  top: 0;
+  width: 2100px;
+  color: #dddcc4;
+  background-color: #1d1d1d;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.9);
+  height: 80px;
+  z-index: 2;
+  margin-top: 100px;
+}
+.box3 h2{
+  position: absolute;
+  left: 600px;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.card-text img{
+  height: 300px;
+  width: 250px;
+  padding: 30px;
+  border-radius: 50px;
+  
+}
+.card-text span{
+  position: absolute;
+  margin-top: 20px;
+  font-size: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: absolute;
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 325%;
+    left: 10%;
+  
+  }
+ 
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: -90px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgb(37, 34, 34);
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: -6.7%;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: #1d1d1d;
+   color: #dddcc4;
+   
+    display: flex;
+    border-radius: 50px;
+    height: 200px;
+
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    
+   transition: all .4s;
+  }
+  .content:hover{
+    box-shadow: 3px 3px 8px yellow;
+    transform: translateY(-20px);
+  }
+  #dp img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: scale(2);
+    border-radius: 50%;
+    z-index: 1;
+   
+  }
+  
+  .desc{
+    position: relative;
+    padding-left: 30pxpx;
+    font-size: large;
+
+    
+  }
+  .card {
+  
+ 
+  
+  position: relative;
+   bottom: 900px;
+    border-radius: 18px;
+    background: #1d1d1d;
+    color:rgb(219, 220, 201);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    cursor: pointer;
+    margin:30px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transition: all .5s;
+  }
+
+.card:hover{
+  transform: translateY(-10px);
+ box-shadow: 5px 5px 15px yellow;
+}
+
+ #about p,h1{
+  padding-top: 10px;
+ }
+
+
+
+ .award{
+  display: flex;
+ }
+ .award .Acard{
+  background-color: #1d1d1d;
+  width: 300px;
+  height: 500px;
+  margin: 40px;
+  margin-top: 70px;
+  align-items: center;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+ text-align: center;
+  color:rgb(219, 220, 201);
+  transition: all .5s;
+ 
+ }
+ .award img{
+  height: 200px;
+  width: 200px;
+margin-top: 30px;
+border-radius: 50pc;
+
+ 
+ }
+ .Acard:hover{
+  transform: translateY(-10px);
+ box-shadow: 5px 5px 15px yellow;
+}
+.Acard h4{
+  text-align: justify;
+  padding: 20px;
+}
